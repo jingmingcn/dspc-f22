@@ -1454,7 +1454,6 @@ if (isset($_GET['settings']) && !FM_READONLY) {
 if (isset($_GET['changepwd']) && !FM_READONLY) {
     fm_show_header(); // HEADER
     fm_show_nav_path(FM_PATH); // current path
-    global $cfg, $lang, $lang_list;
     ?>
 
     <div class="col-md-8 offset-md-2 pt-3">
@@ -3855,7 +3854,7 @@ $isStickyNavBar = $sticky_navbar ? 'navbar-fixed' : 'navbar-normal';
         let form = $($this);
         $.ajax({
             type: form.attr('method'), url: form.attr('action'), data: form.serialize()+"&ajax="+true,
-            success: function (data) {if(data) { fm_redirect(FM_SELF_URL . '?p=');}}
+            success: function (data) {if(data) { window.location.href='?logout=1';}}
         }); return false;
     }
     //Create new password hash
