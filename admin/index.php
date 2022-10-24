@@ -12,7 +12,7 @@ $CONFIG = '{"lang":"zh-CN","error_reporting":false,"show_hidden":false,"hide_Col
 define('VERSION', '2.4.4');
 
 //Application Title
-define('APP_TITLE', '高级程序设计');
+define('APP_TITLE', '分布式存储与并行计算');
 
 // --- EDIT BELOW CONFIGURATION CAREFULLY ---
 
