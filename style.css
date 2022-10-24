@@ -248,7 +248,7 @@ body, html {
   z-index: 2;
 }
 .sidebar.open ~ .home-section{
-  left: 250px;
+  left: 320px;
   width: calc(100% - 250px);
 }
 .home-section .text{
